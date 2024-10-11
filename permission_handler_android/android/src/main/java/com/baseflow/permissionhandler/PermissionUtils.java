@@ -335,19 +335,19 @@ public class PermissionUtils {
                 // The READ_MEDIA_IMAGES permission is introduced in Android TIRAMISU, meaning we should
                 // not handle permissions on pre Android TIRAMISU devices.
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && hasPermissionInManifest(context, permissionNames, Manifest.permission.READ_MEDIA_IMAGES))
-                    permissionNames.add(Manifest.permission.READ_MEDIA_IMAGES);
+                    // permissionNames.add(Manifest.permission.READ_MEDIA_IMAGES);
                 break;
             case PermissionConstants.PERMISSION_GROUP_VIDEOS:
                 // The READ_MEDIA_VIDEOS permission is introduced in Android TIRAMISU, meaning we should
                 // not handle permissions on pre Android TIRAMISU devices.
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && hasPermissionInManifest(context, permissionNames, Manifest.permission.READ_MEDIA_VIDEO))
-                    permissionNames.add(Manifest.permission.READ_MEDIA_VIDEO);
+                    // permissionNames.add(Manifest.permission.READ_MEDIA_VIDEO);
                 break;
             case PermissionConstants.PERMISSION_GROUP_AUDIO:
                 // The READ_MEDIA_AUDIO permission is introduced in Android TIRAMISU, meaning we should
                 // not handle permissions on pre Android TIRAMISU devices.
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && hasPermissionInManifest(context, permissionNames, Manifest.permission.READ_MEDIA_AUDIO))
-                    permissionNames.add(Manifest.permission.READ_MEDIA_AUDIO);
+                    // permissionNames.add(Manifest.permission.READ_MEDIA_AUDIO);
                 break;
             case PermissionConstants.PERMISSION_GROUP_SCHEDULE_EXACT_ALARM:
                 // The SCHEDULE_EXACT_ALARM permission is introduced in Android S, before Android 31 it should alway return Granted
